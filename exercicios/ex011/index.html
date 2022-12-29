@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentesou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <!--Aqui eu to dizendo com (source:media:type) para telas menores que 1000px é para carregar a imagem M e depois a P usando o parametro o "max-width", Obs: tem que ficar logo a cima as alternativas em ordem-->
+        <!--Ou seja, até 750px de LARGURA ele vai carregar a pequena, até a 1050px ele carrega a média e passando disso ai ele lê o código da grande-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <hr>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML com o &lt;audio&gt;</p>
+    <!--Não vale a pena colocar musica em site normal, só quando for focado em podcast-->
+    <audio src="midia/Spooky Boop - Otis McDonald.mp3" controls autoplay></audio>
+</body>
+</html>

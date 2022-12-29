@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="D:\Programacao\CursoEmVideo\html-css\exercicios\ex004\html.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <!--O 'a' é de ancora e o href é o link de referencia-->
+    <p>Ou tambem o meu o <a href="https://www.cursoemvideo.com/login/">site do cursos em video</a></p>
+    <!--Colocando o "target" e o "rel" dessa maneiras eu vou ao invés de abrir em pagina sobrepondo a minha, vou fazer com que crie uma nova aba e a manter a minha para o usuario não a perdela se caso o link envia-lo para outro site diferente do meu-->
+    <p>Você pode acessar meu <a href="https://github.com/dan-cml" target="_blank" rel="external">repositório publico no GitHub</a></p>
+    <hr>
+    <h2>Usando links internos (faz ligação com as paginas que diz respeito ao nosso site)</h2>
+    <!--Colocar o rel="next" é a marcação que o html precisa para quando o site subir o navegador saber qual é a proxima, assim como deixar o "prev" na página para qual foi avançada-->
+    <p>Essa é a primeira página do site. Se quiser acessar a segunda página clique <a href="pag002.html" target="_self" rel="next">AQUI</a></p>
+    <hr>
+    <h2>Página de notícias</h2>
+    <p>Você tambem pode acessar nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p>
+    <h1>Links para downloads</h1>
+    <ul>
+        <!--Para arquivos pdfs precisa só colcoar o link do arquivo, o resto faria sentido para outro tipo de arquivo, que ai ele faz o download diretamente-->
+        <li>Livro <a href="A Psicologia das Cores - Eva Heller.pdf" target="_blank" download="A Psicologia das Cores - Eva Heller.pdf" type="application.pdf">Psicologia das cores</a></li>
+        <li>Livro <a href="A Arte e a Ciência de Memorizar Tudo - Joshua Foer.pdf">A Arte e a Ciência de Memorizar Tudo</a></li>
+    </ul>
+</body>
+</html>

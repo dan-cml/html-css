@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+
+p{
+    text-align: justify;
+}
+
+body{
+    background-image: linear-gradient(to right, #A6998F, #592F20, #260401);
+}
+/*Com o widht eu to deliminando o valor máximo de tudo que está no main, o padding é meio q uma bordinha em todo o quadrado do main, o margin vai centralizar independente de como tá a tela, o box-shadow é para fazer uma sombra no quadrado do main*/
+main{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px black;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    color: #d6c0a5;
+    text-align: center;
+}
+
+h2{
+    color: #73675D;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        /*Ali na fonte, como nem todo dispositivo tem todas as fontes do mundo, ele vai tentar primeiro a Arial, se não der certo ele vai pra Helvetica e por ultimo a sans-serif (não serifada) que seria qualquer uma não serifada*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt (esse é aquele tamanho que usamos no word para tamanho de fonte), pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+
+            Recomendado pela W3S usar "em" ou "px"
+            16px = 1em
+            */
+            font-size: 20px;
+            text-align: justify;
+        }
+        /*h1, h2{
+            font-family: 'Times New Roman', Times, serif;
+        }*/
+        /*h1{
+            
+            font: italic bolder 3em Arial, sans-serif;
+            isso chama shorthands
+            basicamente vou declarar 1º font-style 2º font-weight 3ºfont-size 4ºfont-family
+            
+        }*/
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reiciendis suscipit et, id eaque provident praesentium assumenda ab cupiditate eius expedita, asperiores officiis iure vero nostrum numquam atque voluptates quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur incidunt, ipsa delectus officiis vel eos quos enim ab natus dolor assumenda. Voluptatum laudantium consequatur sunt asperiores similique doloribus nesciunt hic! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda adipisci quasi corrupti doloribus eos sit animi suscipit molestiae totam iusto. Temporibus, deserunt. Dolores obcaecati sit dolor nostrum beatae reiciendis reprehenderit.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam fuga amet cum distinctio natus ratione? Ducimus doloremque saepe vero rem at! Doloribus, praesentium molestiae rerum est quis totam ad.</p>
+    <p><button><a href="fonte02.html">Clique aqui</a></button> para ir para outra página</p>
+</body>
+</html>
