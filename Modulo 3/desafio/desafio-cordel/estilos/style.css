@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fontetitulo: 'Passion One', Arial, sans-serif;
+    --fontecorpo: 'Sriracha', Arial, sans-serif;
+    --fontecitacao: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: black;
+    padding: 50px 0px;
+}
+
+header > h1 {
+    font-family: var(--fontetitulo);
+    font-size: 48pt;
+    color: white; 
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+header > p {
+    font-family: var(--fontecitacao);
+    color: white; 
+    text-align: center;
+}
+
+main {
+    font-family: var(--fontecorpo);
+}
+
+main .comum {
+    padding: 80px 20px;
+}
+
+main .comum > p {
+    max-width: 350px;
+    font-size: 30px;
+}
+
+main .especial {
+    padding: 80px 20px;
+}
+
+main #flor {
+    background-image: url('../imagens/background001.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+main #livro {
+    background-image: url('../imagens/background002.jpg');
+    background-position: left center;
+    background-attachment: fixed;
+}
+
+main .especial > div {
+    background-color: rgba(0, 0, 0, 0.404);
+    max-width: 360px;
+    padding: 5px;
+}
+
+main .especial > div > p {
+    color: white;
+    font-size: 30px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-family: var(--fontecitacao);
+    text-align: center;
+    padding: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
