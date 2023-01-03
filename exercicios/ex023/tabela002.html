@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolde;
+            padding: 10px;
+            background-color: lightblue;
+        }
+
+        th, td {
+            border: 1px solid black;
+            width: 200px;
+            height: 25px;
+            text-align: center;
+        }
+
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+        /*Essa configuração junto com o "position:relative" do table serve para deixar o cabeçalho fixo/congelado quando se desce a tabela, funciona muito bem para tabelas muito grandes*/
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        /*Essa pseudoclasse faz esse efeito zebrado em tabelas e o 2n é para falar que é uma sim e outra não, posso colocar 3n e ele vai pular 2 e colocar a cor na terceira*/
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+        /*Aqui ele vai editar apenas as linhas impares, se trocar por "even" ele apenas edita as pares*/ 
+        tbody > tr:nth-child(odd) {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        TABLE
+            CAPTION (legenda/titulo da tabela)
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% da população total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>46 024 937</td>
+                <td>22,2%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>20 732 660</td>
+                <td>10,0%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16 615 526</td>
+                <td>8,0%</td>
+            </tr>
+            <tr>
+                <td>Outros estados...</td>
+                <td></td>
+                <td>59,8%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>207 750 291</strong></td>
+                <td>100%</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
