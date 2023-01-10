@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #5f2c82;
+}
+
+main{
+    margin-top: 20px;
+    margin-left: 20px;
+    background-image: url('../imagens/metal.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+    width: 280px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+main h3 {
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px;
+}
+
+div {
+    display: block;
+}
+
+div.info {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    background-color: #5f2c82;
+    border-radius: 10px;
+}
+
+div > input {
+    margin-left: 50px;
+}

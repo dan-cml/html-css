@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+</head>
+<body>
+    <main>
+        <form action="cadastro.cs" method="post">
+            <h3>Login</h3>
+            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+            <div class="info">
+                <label for="iemail"><span id="person" class="material-icons">person</span></label>
+                <input type="email" name="email" id="iemail" placeholder="seu e-mail" required>
+            </div>
+            <div class="info">
+                <label for="isenha"><span id="key" class="material-icons">key</span></label>
+                <input type="password" name="senha" id="isenha" placeholder="sua senha" required>
+            </div>
+
+            <input type="submit" value="Entrar">
+            <input type="submit" value="Recuperar">
+        </form>
+    </main>
+</body>
+</html>
